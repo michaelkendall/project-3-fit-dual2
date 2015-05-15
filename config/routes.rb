@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  #root "sessions#index"
 
   root 'workouts#home'
   #get 'workouts/home'
@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   #get 'exercises' => 'workouts#exercises'
 
   get 'help' => 'workouts#help'
-
   get 'workouts' => 'workouts#workout_type'
   get 'signup' => 'users#new'
 
