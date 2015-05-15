@@ -1,15 +1,21 @@
 Rails.application.routes.draw do
-  get 'workouts/home'
 
-  get 'workouts/help'
 
-  get 'workouts/workout_type'
+  root 'workouts#home'
+  #get 'workouts/home'
+
+  #get 'exercises' => 'workouts#exercises'
+
+  get 'help' => 'workouts#help'
+
+  get 'workouts' => 'workouts#workout_type'
+  get 'signup' => 'users#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'workouts#home'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
