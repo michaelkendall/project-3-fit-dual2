@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass'
+gem 'fitbit'
+gem 'omniauth'
+gem 'omniauth-fitbit'
+gem 'figaro'
 
 
 gem 'bootstrap'
